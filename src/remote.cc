@@ -210,7 +210,7 @@ NAN_METHOD(GitRemote::Connect) {
   baton->remote = ObjectWrap::Unwrap<GitRemote>(args.This())->GetValue();
   NanAssignPersistent(Value, baton->directionReference, args[0]);
   git_direction from_direction;
-  from_direction = (git_direction) args[0]->ToNumber()->Value();
+  //from_direction = (git_direction) args[0]->ToNumber()->Value();
   baton->direction = from_direction;
   NanAssignPersistent(Function, baton->callback, Local<Function>::Cast(args[1]));
 

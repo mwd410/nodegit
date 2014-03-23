@@ -204,7 +204,7 @@ NAN_METHOD(GitTreeBuilder::Insert) {
         const git_oid * from_id;
             from_id = ObjectWrap::Unwrap<GitOid>(args[1]->ToObject())->GetValue();
         git_filemode_t from_filemode;
-            from_filemode = (git_filemode_t) args[2]->ToNumber()->Value();
+            //from_filemode = (git_filemode_t) args[2]->ToNumber()->Value();
       
   int result = git_treebuilder_insert(
     &out

@@ -44,7 +44,8 @@
     "nodeunit": "~0.8.1",
     "rimraf": "~2.2.2",
     "ejs": "~0.8.4",
-    "ncp": "~0.4.2"
+    "ncp": "~0.4.2",
+    "async": "~0.2.10"
   },
   "scripts": {
     "install": "node install.js",
